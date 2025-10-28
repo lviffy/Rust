@@ -15,7 +15,7 @@ loop{
     io::stdin().read_line(&mut guess)
         .expect("could not read input");
 
-    let guess : u32 =match guess.trim().parse(){
+    let guess : u32 = match guess.trim().parse(){
         Ok(num) => num,
         Err(_) => {
             println!("please enter a valid input");
