@@ -3,6 +3,8 @@ fn main() {
 
 loop {
     let mut degree_in_f = String::new();
+
+    println!("Enter a temp in F:");
     io::stdin().read_line(&mut degree_in_f).expect("could not read!");
 
     let degree_in_f : f64 = match degree_in_f.trim().parse(){
@@ -14,7 +16,7 @@ loop {
     };
 
     let degree_in_c = f_to_c(degree_in_f);
-    println!("{degree_in_f} in celcius is {degree_in_c}");
+    println!("{degree_in_f} F in celcius is {degree_in_c} C");
 
     break;
 }
