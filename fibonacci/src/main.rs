@@ -20,7 +20,7 @@ loop{
     let mut next:usize = 1;
     print!("{prev} ");
     print!("{next} ");
-    for i in 0..n{
+    for i in 0..n-2{
         fibonacci = prev + next;
         print!("{fibonacci} ");
         prev = next;
