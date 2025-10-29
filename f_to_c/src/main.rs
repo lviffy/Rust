@@ -13,14 +13,13 @@ loop {
         }
     };
 
-    f_to_c(degree_in_f);
+    let degree_in_c = f_to_c(degree_in_f);
+    println!("{degree_in_f} in celcius is {degree_in_c}");
+
     break;
 }
 }
 
-fn f_to_c(degree_in_f: f64) {
-    let mut C : f64 = 0.0;
-    C = (degree_in_f - 32.0)*5.0/9.0;
-
-    println!("{C}");
+fn f_to_c(degree_in_f: f64) -> f64{
+    (degree_in_f - 32.0)*5.0/9.0
 }
